@@ -21,8 +21,8 @@ class Solution:
                 e -= 1
             return A
 
-        revA = Rev(nums,0,N)
-        rev0B = Rev(revA,0,k-1)
+        Rev(nums,0,N)
+        rev0B = Rev(nums,0,k-1)
         RevRes = Rev(rev0B,k,N)
         
         return RevRes
