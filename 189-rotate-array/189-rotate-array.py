@@ -22,7 +22,7 @@ class Solution:
             return A
 
         Rev(nums,0,N)
-        rev0B = Rev(nums,0,k-1)
-        RevRes = Rev(rev0B,k,N)
+        Rev(nums,0,k-1)
+        Rev(nums,k,N)
         
-        return RevRes
+        return nums
