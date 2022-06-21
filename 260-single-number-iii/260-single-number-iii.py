@@ -1,20 +1,20 @@
 class Solution:
     def singleNumber(self, nums: List[int]) -> List[int]:
-        dic = {}
-        A = nums
-        for i in range(len(A)):
-            if A[i] not in dic:
-                dic[A[i]] = 1
-            else:
-                dic[A[i]] = 2
+        ans = 0
+        for i in nums:
+            ans ^= i
 
-        res = []
-        for j in dic:
-            if dic[j] == 1:
-                res.append(j)
+        diff = 0
+        for diff in range(32):
+            if (1 << diff ) & ans:
+                break
 
-
-        return(res)
+        xor = 0
+        for i in nums:
+            if (1 << diff) & i:
+                xor ^= i
+                
+        return [xor,xor^ans]
                 
                 
         
