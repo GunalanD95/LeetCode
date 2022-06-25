@@ -21,8 +21,6 @@ class Solution:
             return False
         
         for k in hashmap1:
-            if hashmap1.get(k) == hashmap2.get(k):
-                pass
-            else:
+            if hashmap1.get(k) != hashmap2.get(k):
                 return False
         return True
