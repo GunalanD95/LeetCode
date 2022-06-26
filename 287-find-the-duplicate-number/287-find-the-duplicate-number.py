@@ -1,7 +1,7 @@
 class Solution:
     def findDuplicate(self, nums: List[int]) -> int:
         
-        seen = [0] * (len(nums)+1)
+        seen = [0] * (len(nums))
         for num in nums:
             if seen[num]:
                 return(num)
