@@ -17,6 +17,6 @@ class Solution:
         for j in nums:
             if j == me:
                 cc += 1   
-        if cc > len(nums)/2:
-            return me
+            if cc > len(nums)/2:
+                return me
         
