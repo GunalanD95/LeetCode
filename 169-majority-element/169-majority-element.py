@@ -13,8 +13,6 @@ class Solution:
             elif i != me:
                 c -= 1
                 
-
-        
         cc = 0
         for j in nums:
             if j == me:
