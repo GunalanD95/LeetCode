@@ -6,7 +6,7 @@ class Solution:
         ans = 0
         while s >= 0:
             val = ord(columnTitle[s]) - 64
-            ans += val * pow(26,powal)
+            ans += val * (26**powal)
             powal += 1
             s -= 1
         return ans
