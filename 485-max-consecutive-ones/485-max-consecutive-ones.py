@@ -6,7 +6,8 @@ class Solution:
         for i in nums:
             if i == 1:
                 c += 1
-                res = max(res,c)
+                if c > res:
+                    res = c
                 
             elif i != 1:
                 c = 0
