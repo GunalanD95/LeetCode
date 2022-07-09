@@ -11,4 +11,3 @@ class Solution:
             s[r] = temp
             l += 1
             r -= 1
-  
