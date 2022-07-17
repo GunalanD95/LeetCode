@@ -4,25 +4,24 @@ class Solution:
         Do not return anything, modify nums in-place instead.
         """
         
-        k = k % len(nums)
         N = len(nums) - 1
         
-
-        def Rev(A,st,end):
+        k = k % len(nums)
+        
+        def rev(A,st,end):
             s = st
             e = end
-
             while s <= e:
                 temp = A[s]
                 A[s] = A[e]
                 A[e] = temp
-
                 s += 1
                 e -= 1
             return A
 
-        Rev(nums,0,N)
-        Rev(nums,0,k-1)
-        Rev(nums,k,N)
+
+        revA = rev(nums,0,N)
+        rev1 = rev(revA,0,k-1)
+        final = rev(rev1,k,N)
         
-        return nums
+        return final
