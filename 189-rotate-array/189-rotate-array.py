@@ -20,8 +20,8 @@ class Solution:
             return A
 
 
-        revA = rev(nums,0,N)
-        rev1 = rev(revA,0,k-1)
-        final = rev(rev1,k,N)
+        rev(nums,0,N)
+        rev(nums,0,k-1)
+        rev(nums,k,N)
         
-        return final
+        return nums
