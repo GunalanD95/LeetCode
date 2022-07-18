@@ -6,10 +6,13 @@ class Solution:
         row = len(mat)
         col = len(mat[0])
         
-        for i in range(row):
-            for j in range(col):
-                if i == j:
-                    res += mat[i][j]
+        s = 0
+        e = 0
+        
+        while s <= N-1 and e <= N-1:
+            res += mat[s][e]
+            s+=1
+            e+=1
                     
         r = 0
         c = N - 1 
