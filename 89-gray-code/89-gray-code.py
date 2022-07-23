@@ -1,14 +1,14 @@
 class Solution:
     def grayCode(self, n: int) -> List[int]:
-        A = n
         def getbinary(number):
-            if number == 0:
-                return 0
-            smallans = getbinary(number // 2)
-            return number % 2 + 10 * smallans
+            # if number == 0:
+            #     return 0
+            # smallans = getbinary(number // 2)
+            # return number % 2 + 10 * smallans
+            return bin(number).replace("0b", "")
         
         result  = []
-        for i in range(1<<A):
+        for i in range(1<<n):
             val = '0' + str(getbinary(i))
             res = val[0]
             
