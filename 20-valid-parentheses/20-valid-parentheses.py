@@ -1,34 +1,33 @@
-class stack:
+class MyStack:
+
     def __init__(self):
         self.stk = []
-    def push(self,val):
-        self.stk.append(val)
-    def pop(self):
-        if not self.isEmpty():
-            return self.stk.pop()
-    def top(self):
-        if not self.isEmpty():
-            return self.stk[-1]
-    def addback(self,val):
-        return self.stk.insert(0,val)
-       
-    def isEmpty(self):
-        if len(self.stk) == 0:
-            return True
-           
-    def getstack(self):
-        return self.stk
+        
 
+    def push(self, x: int) -> None:
+        self.stk.append(x)
+        
+
+    def pop(self) -> int:
+        if not self.empty():
+            return self.stk.pop()
+
+    def top(self) -> int:
+        if not self.empty():
+            return self.stk[-1]
+        
+
+    def empty(self) -> bool:
+        if len(self.stk) !=0:
+            return False
+        return True
 
 class Solution:
     def isValid(self, s: str) -> bool:
-        ll = stack()
-
-        l = '{(['
+        ll = MyStack()
+        l = '([{'
         r = '])}'
-
-        ll = stack()
-
+        
         for i in range(len(s)):
             if s[i] in l:
                 ll.push(s[i])
@@ -36,22 +35,40 @@ class Solution:
             elif s[i] in r:
                 if len(ll.stk) == 0:
                     return False
-
-                top = ll.top()
-                if top == '{' and s[i] == '}':
-                    ll.pop()
-
-                elif top== '(' and s[i] == ')':
-                    ll.pop()
                 
+                top = ll.top()
+                if top == '(' and s[i] == ')':
+                    ll.pop()
+                    
                 elif top == '[' and s[i] == ']':
                     ll.pop()
-
+                    
+                elif top == '{' and s[i] == '}':
+                    ll.pop()
+                    
                 else:
                     return False
-
-        if len(ll.stk) > 0:
+                    
+                    
+        if len(ll.stk) != 0:
             return False
-
-        return True
         
+        return True
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                
