@@ -1,74 +1,39 @@
-class Node():
-    def __init__(self,val,next=None):
-        self.val = val
-        self.next = None
-        
-        
-class LinkedList():
-    def __init__(self):
-        self.head = None
-        self.minhead = None
-                        
-    def insertfront(self,val):
-        newNode = Node(val)
-        if self.head:
-            temp = self.head
-            newNode.next = temp
-            self.head = newNode
-        else:
-            self.head = newNode
-        
-        minnewNode = Node(val)
-        if self.minhead == None:
-            self.minhead = minnewNode
-        
-        elif self.minhead.val == None:
-            self.minhead = minnewNode
-            
-        elif val <= self.minhead.val:
-            oldmin = self.minhead
-            minnewNode.next = oldmin
-            self.minhead = minnewNode
-            
-    def pop(self):
-        if self.head:
-            remove = self.head
-            if remove.val == self.minhead.val:
-                oldmin = self.minhead
-                self.minhead = oldmin.next               
-            
-            newhead = remove.next
-            self.head = newhead
-        else:
-            return
-        
-    def top(self):
-        if self.head:
-            return self.head.val
-        else:
-            return 
-
-
 class MinStack:
 
     def __init__(self):
-        self.ll = LinkedList()
+        self.stk = []
+        self.mnstk = []
         
 
     def push(self, val: int) -> None:
-        return self.ll.insertfront(val)
-        
+        if len(self.stk) == 0:
+            self.stk.append(val)
+            self.mnstk.append(val)
+        else:
+            self.stk.append(val)
+            if val <= self.mnstk[-1]:
+                self.mnstk.append(val)
+            
 
     def pop(self) -> None:
-        return self.ll.pop()
+        if len(self.stk) == 0:
+            return 
+        else:
+            val = self.stk.pop()
+            if val == self.mnstk[-1]:
+                self.mnstk.pop()
         
 
     def top(self) -> int:
-        return self.ll.top()
+        if len(self.stk) !=0:
+            return self.stk[-1]
+        return -1
         
 
     def getMin(self) -> int:
-        return self.ll.minhead.val
+        if len(self.mnstk) !=0:
+            return self.mnstk[-1]
+        return -1
         
 
 
