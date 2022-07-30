@@ -18,4 +18,9 @@ class Solution:
                                                 #      completes without break
 
         return ans 
+    
+    
+    # https://leetcode.com/problems/word-subsets/discuss/2356000/Python3-oror-12-lines-dict-and-counter-w-explanation-oror-TM%3A-8473
+    
+#     RE DO ---
         
