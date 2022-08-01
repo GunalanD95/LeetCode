@@ -4,30 +4,28 @@ class Solution:
         
         # BruteForce - Linear Search - O(n)2
         N = len(nums)
-        
-#         for i in range(1,N+1):
-#             if i not in nums:
-#                 return i
-            
-#         return N + 1
-    
-    
-        # Using Boolean Array Method
-        
-        barr = [False] * (N+1)
-        
-        for i in nums:
-            if i >= 0 and i <= N:
-                barr[i] = True
+        i = 0
+
+        while i < N:
+            if nums[i] > 0 and nums[i] < N +1:
+                correctindx = nums[i] - 1
+                if nums[correctindx] != nums[i]:
+                    temp = nums[i]
+                    nums[i] = nums[correctindx]
+                    nums[correctindx] = temp
+                else:
+                    i+= 1
+
+            else:
+                i +=1
                 
-                
-        for j in range(1,len(barr)):
-            if barr[j] == False:
-                return j
+        for i in range(N):
+            if nums[i]-1 != i:
+                return(i+1)
             
             
-        return N + 1
-        
+        return N+1
+
                 
                 
         
