@@ -19,6 +19,8 @@ class Solution:
             if mask & n:
                 count += 1
                 
+            if count > 1:
+                return False
                 
         if count == 1:
             return True
