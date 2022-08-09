@@ -12,7 +12,8 @@ class Solution:
         ans = ''
         while num:
             ans = hexd[num % 16] + ans
-            num = num // 16
+            # num = num // 16
+            num = num >> 4
             
             
             
