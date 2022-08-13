@@ -8,7 +8,7 @@ class Solution:
 
             i = rng 
 
-            while i > 0:
+            while i * i > 0:
                 if A % i == 0 and B % i == 0:
                     return i 
 
