@@ -1,23 +1,21 @@
 class Solution:
     def grayCode(self, n: int) -> List[int]:
-        def getbinary(number):
-            # if number == 0:
-            #     return 0
-            # smallans = getbinary(number // 2)
-            # return number % 2 + 10 * smallans
-            return bin(number).replace("0b", "")
+        def graycode(n,ans):
+            if n == 0:
+                return 
+            if n == 1:
+                ans.append(0)
+                ans.append(1)
+            graycode(n-1,ans)
+
+            msb = 1<< n-1
+            if n > 1:
+                s = len(ans) - 1
+                while s >= 0:
+                    ans.append(ans[s]+msb)
+                    s -= 1
+            return ans
+
+
+        return graycode(n,[])
         
-        result  = []
-        for i in range(1<<n):
-            val = '0' + str(getbinary(i))
-            res = val[0]
-            
-            for j in range(1,len(val)):
-                if val[j] == val[j-1]:
-                    res = res + '0'
-                else:
-                    res = res + '1'
-            result.append(int(res,2))
-
-
-        return(result)
