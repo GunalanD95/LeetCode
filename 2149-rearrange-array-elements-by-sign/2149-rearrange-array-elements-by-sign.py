@@ -2,25 +2,33 @@ class Solution:
     def rearrangeArray(self, nums: List[int]) -> List[int]:
         N = len(nums)
         
-        if N == 2:
-            nums.sort(reverse=True)
-            
-        negati =[]
-        posti =[]
-
-        for i in range(len(nums)):
-            if nums[i] < 0:
-                negati.append(nums[i])
-            else:
-                posti.append(nums[i])
-
-
-        ans = []
-        while len(negati) > 0 and len(posti) > 0:
-            ans.append(posti.pop(0))
-            ans.append(negati.pop(0))
-            
-        return ans
+        ans = [0] * N
         
+        pos =  0
+        neg =  1
+        for i in nums:
+            if i > 0:
+                ans[pos] = i
+                pos += 2
+                
+            else:
+                ans[neg] = i
+                neg += 2
+                
+        return ans 
+        
+        '''
+        - bruteforce : *using two negative and postive arrays we are just segrigating them and then adding them to our ans array *
+          tc : o(N)
+          
+          
+          
+        - optimized :
+        
+            we can find pos of postive and negative using variables :
+            pos += 2
+            neg += 2 , when we find pos or neg 
+
+        '''
         
         
