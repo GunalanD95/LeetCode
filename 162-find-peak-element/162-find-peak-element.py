@@ -6,18 +6,16 @@ class Solution:
         
         low , high = 0 , N - 1
         
-        while low < high:
+        while low <= high:
             
             mid = (low + high) // 2
             
-            if nums[mid+1] > nums[mid]:
+            if nums[mid-1] > nums[mid]:
+                high = mid - 1  
+            else:
                 low = mid + 1
                 
                 
-            else:
-                high = mid 
                 
                 
-                
-                
-        return low 
+        return abs(high)
