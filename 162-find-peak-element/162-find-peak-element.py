@@ -3,8 +3,21 @@ class Solution:
         
         
         N = len(nums)
-        nums.append(float("-inf"))
-        for i in range(1, len(nums)):
-            if nums[i] >= nums[i - 1] and nums[i] >= nums[i + 1]: return i
+        
+        low , high = 0 , N - 1
+        
+        while low < high:
             
-        return 0
+            mid = (low + high) // 2
+            
+            if nums[mid+1] > nums[mid]:
+                low = mid + 1
+                
+                
+            else:
+                high = mid 
+                
+                
+                
+                
+        return low 
