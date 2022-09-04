@@ -1,31 +1,33 @@
 class Solution:
     def searchMatrix(self, matrix: List[List[int]], target: int) -> bool:        
-#         for i in range(len(matrix)):
-#             for j in range(len(matrix[0])):
-#                 if matrix[i][j] == target:
-#                     return True
-                
-#         return False
-    
+
+        # binary search 
         A = matrix
-    
+        
         rows = len(A)
         cols = len(A[0])
-
-
-        i = 0
-        j = cols - 1
-
-        while i < rows and j >= 0:
-            if A[i][j] == target:
-                return True 
+        
+        
+        low = 0
+        high = (rows * cols) - 1
+        
+        while low <= high:
+            
+            mid = (low + high) // 2
+            
+            rowidx = mid // cols
+            colidx = mid % cols 
+            
+            if A[rowidx][colidx] == target:
+                return True
+            
+            if A[rowidx][colidx] > target:
+                high = mid - 1
                 
-            if A[i][j] > target:
-                j -= 1
-                
-            # elif A[i][j] < B:
             else:
-                i += 1
-
-        return False
+                low = mid + 1
+                
+                
+                
+        return False 
         
