@@ -18,21 +18,19 @@ class Solution:
     def findPOR(self,arr):
         low , high = 0 , len(arr) - 1
 
-        POR = -1
-
+        low = 0
+        high = len(arr) - 1
         while low <= high:
-            mid = (low + high)//2
 
-            if (mid == low or arr[mid] < arr[mid-1]) and (mid == high or arr[mid] < arr[mid+1]):
-                POR = mid
-                break
+            mid = low + (high - low)//2
 
-            if arr[mid] > arr[high]:
-                low = mid + 1
+            if arr[mid] < arr[high]:
+                high = mid
+
             else:
-                high = mid - 1
+                low = mid + 1
 
-        return POR 
+        return mid
             
     
     
