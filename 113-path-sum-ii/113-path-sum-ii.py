@@ -10,11 +10,9 @@ class Solution:
             cur_sum += node.val
             cur_stack.append(node.val)
             
-            temp = cur_stack.copy()
-            
-            
             if not node.left and not node.right:
                 if cur_sum == targetSum:
+                    temp = cur_stack.copy()
                     stack.append(temp) 
                     
             left = dfs(node.left,cur_sum)
