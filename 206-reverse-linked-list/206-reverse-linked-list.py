@@ -4,28 +4,18 @@ class Solution:
         if not head:
             return head
         # single node 
-        if not head.next:
-            return head 
+        prev = None
+        cur = head
+        cn  = None
         
-        # two node 
-        if not head.next.next:
-            temp = head
-            newhead = temp.next
-            temp.next = None
-            newhead.next = temp
-            head = newhead
-            return head
         
-        # 3 pointer method 
-        prev = head
-        cur  = head.next
-        head.next  = None # head will become tail initally
-
-        while cur != None:
-            cn  = cur.next
-            cur.next = prev 
-            prev = cur
-            cur = cn 
+        
+        while cur:
+            cn   =  cur.next
+            cur.next = prev
+            prev  = cur
+            cur   = cn
+        
             
                 
                 
