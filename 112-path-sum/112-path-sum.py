@@ -25,8 +25,7 @@ class Solution:
             left = dfs(node.left,cur_sum)
                 
             right = dfs(node.right,cur_sum) 
-                
-            print("left",left,"right",right)    
+            
             if left == True or right == True:
                 return True
             else:
