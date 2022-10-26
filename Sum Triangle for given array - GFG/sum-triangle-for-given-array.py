@@ -1,6 +1,6 @@
 #User function Template for python3
 
-def getTriangle(arr, n):
+def getTriangle( arr, n):
     ans = []
     def sumoftriangle(arr):
         if len(arr) == 1:
@@ -20,7 +20,7 @@ def getTriangle(arr, n):
             
     sumoftriangle(arr)
     ans.extend(arr)
-    return ans
+    return ans    
     
 
 
