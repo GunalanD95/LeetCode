@@ -1,26 +1,28 @@
-# Definition for a binary tree node.
-# class TreeNode:
-#     def __init__(self, val=0, left=None, right=None):
-#         self.val = val
-#         self.left = left
-#         self.right = right
+from collections import deque
+
 class Solution:
     def binaryTreePaths(self, root: Optional[TreeNode]) -> List[str]:
         ans = []
         
-        def dfs(node,path):
-            if not node:
-                return
+        q = deque()
+        q.append((root, ""))
+        
+        while q:
             
-            
-            path = path  + '->' + str(node.val)
-            if not node.left and not node.right:
-                ans.append(path[2:])
-            
-            left  =  dfs(node.left,path )
-            right =  dfs(node.right,path )
-            
-
-        dfs(root,'')
-        return ans 
+            for i in range(len(q)):
+                cur_node , ls = q.popleft()
+                
+                if not cur_node.left and  not cur_node.right:
+                    ans.append(ls + str(cur_node.val) )
+                    
+                if cur_node.left:
+                    q.append((cur_node.left,ls  + str(cur_node.val) + '->' ))
+                    
+                if cur_node.right:
+                    q.append((cur_node.right,ls + str(cur_node.val) + '->' ))
+                    
+                    
+        return ans
+        
+        
         
