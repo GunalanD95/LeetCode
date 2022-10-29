@@ -61,10 +61,18 @@ class Solution:
         if not root:
             return None
         
-        if not root.left and not root.right:
-            if root.val == key:
+        if root.val == key:
+            if not root.left and not root.right:
                 return None
-        
+            
+            if not root.left and root.right:
+                root = root.right
+                return root
+               
+            if not root.right and root.left:
+                root = root .left
+                return root            
+            
         parent ,delete_node      = self.SearchNode(root,key)
         
         if not parent and not delete_node:
@@ -76,14 +84,14 @@ class Solution:
         
         # Delete Node with 1 or ZERO CHILD
         
-        if delete_node == parent:
-            if check_type == 1:
-                if parent.left:
-                    root = parent.left
-                elif parent.right:
-                    root = parent.right
+#         if delete_node == parent:
+#             if check_type == 1:
+#                 if parent.left:
+#                     root = parent.left
+#                 elif parent.right:
+#                     root = parent.right
                 
-                return root
+#                 return root
                 
         
         
