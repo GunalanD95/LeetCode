@@ -1,8 +1,8 @@
 class Trie_Node:
     def __init__(self,char):
         self.val     = char
-        self.edges    = {}
-        self.isEnd   = False
+        self.edges   = {}
+        self.isEnd   = 0
     
 class Trie:
 
@@ -19,7 +19,7 @@ class Trie:
                 
             cur_node = cur_node.edges[char]
             
-        cur_node.isEnd = True
+        cur_node.isEnd += 1
             
         
 
@@ -30,7 +30,10 @@ class Trie:
             if char not in cur_node.edges:
                 return False
             cur_node = cur_node.edges[char]
-        return cur_node.isEnd    
+            
+        if cur_node.isEnd > 0:
+            return True
+        return False
 
     def startsWith(self, prefix: str) -> bool:
         cur_node = self.root
