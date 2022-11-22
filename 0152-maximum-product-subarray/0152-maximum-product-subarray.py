@@ -13,7 +13,7 @@ class Solution:
             cur_min_prod = min(cur_min_prod * nums[i], prev_max_prd * nums[i], nums[i])
             cur_max_prod = max(cur_max_prod * nums[i], prev_min_prd * nums[i] , nums[i])
             
-            ans = max(cur_min_prod,cur_max_prod,ans)
+            ans = max(cur_max_prod,ans)
             
             prev_min_prd = cur_min_prod
             prev_max_prd = cur_max_prod
