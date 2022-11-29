@@ -4,32 +4,25 @@ class Solution:
     
     #Function to return max value that can be put in knapsack of capacity W.
     def knapSack(self,W, wt, val, n):
-        hashmap = defaultdict(set)
+        dp = [[-1]*(W+1) for i in range(n+1)]
         
-        def dpKnapSack(indx,bag_weight):
-            if bag_weight == 0:
-                return 0
+        for indx in range(n+1):
+            for weight in range(W+1):
+                dont_take = dp[indx-1][weight]
                 
-            if indx < 0:
-                return 0
+                if indx == 0 or wt == 0:
+                    dp[indx][weight] = 0
+                    
+                elif wt[indx - 1] > weight:
+                    dp[indx][weight] = dont_take
                 
-            if (indx,bag_weight) in hashmap:
-                return hashmap[(indx,bag_weight)]
-                
-            
-            take_it = float('-inf')
-            if wt[indx] > bag_weight:
-                dont_take = 0 + dpKnapSack(indx-1, bag_weight)
-            else:
-                dont_take = 0 + dpKnapSack(indx-1,bag_weight )
-                take_it   = val[indx] + dpKnapSack(indx-1, bag_weight - wt[indx])
-                
-            hashmap[(indx,bag_weight)] = max(take_it,dont_take)
-            
-            return hashmap[(indx,bag_weight)]
-            
-            
-        return dpKnapSack(n-1,W)
+                else:
+                    take_it  = val[indx-1] + dp[indx-1][weight - wt[indx - 1]]
+                    dp[indx][weight] = max(dont_take,take_it)
+                     
+                    
+        return (dp[n][W])
+
 
 #{ 
  # Driver Code Starts
