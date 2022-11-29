@@ -1,38 +1,24 @@
 #User function Template for python3
-from collections import defaultdict
-import sys 
-sys.setrecursionlimit(10**6)
-
 class Solution:
     def knapSack(self, N, W, val, wt):
-        hashmap = defaultdict(set)
+        dp = [[-1]*(W+1) for i in range(N+1)]
         
-        def dpKnapSack(indx,bag_weight):
-            if bag_weight <= 0:
-                return 0
+        for indx in range(N+1):
+            for weight in range(W+1):
+                dont_take = dp[indx-1][weight]
                 
-            if indx < 0:
-                return 0
+                if indx == 0 or wt == 0:
+                    dp[indx][weight] = 0
+                    
+                elif wt[indx - 1] > weight:
+                    dp[indx][weight] = dont_take
                 
-            if (indx,bag_weight) in hashmap:
-                return hashmap[(indx,bag_weight)]
-                
-            
-            take_it = -1000000000
-            
-            if wt[indx] > bag_weight:
-                dont_take = dpKnapSack(indx-1, bag_weight)
-            else:
-                dont_take = dpKnapSack(indx-1,bag_weight )
-                
-                take_it   = val[indx] + dpKnapSack(indx, bag_weight - wt[indx])
-                
-            hashmap[(indx,bag_weight)] = max(take_it,dont_take)
-            
-            return hashmap[(indx,bag_weight)]
-            
-            
-        return dpKnapSack(N-1,W)
+                else:
+                    take_it  = val[indx-1] + dp[indx][weight - wt[indx - 1]]
+                    dp[indx][weight] = max(dont_take,take_it)
+                     
+                    
+        return (dp[N][W])
 
 
 #{ 
