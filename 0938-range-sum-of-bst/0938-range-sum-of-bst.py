@@ -18,10 +18,11 @@ class Solution:
                 print(node.val)
                 self.total_sum += node.val
                 
-            print(self.total_sum)
                 
-            _dfs(node.left)
-            _dfs(node.right)
+            if node.val > low:
+                _dfs(node.left)
+            if node.val < high:
+                _dfs(node.right)
             
         _dfs(root)
         return self.total_sum
