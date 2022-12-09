@@ -2,27 +2,26 @@ from collections import *
 class Solution:
     def maxAncestorDiff(self, root: Optional[TreeNode]) -> int:
         
-        q = deque()
-        q.append( (root,root.val,root.val) )
+        queue = deque()
+        queue.append((root, root.val, root.val))
+        answer = -math.inf
         
-        res = -1
-        
-        while q:
+        while queue:
             
-            for _ in range(len(q)):
-                cur_node , min_val , max_val = q.popleft()
+            queue_len = len(queue)
+            for _ in range(queue_len):
                 
-                value = abs(max_val - min_val)
+                node, min_val, max_val = queue.popleft()
+                diff1 = abs(node.val-min_val)
+                diff2 = abs(node.val-max_val)
                 
-                res = max(res,value)
+                answer = max(answer, diff1, diff2)
                 
-                if cur_node.left:
-                    q.append((cur_node.left,min(cur_node.left.val,min_val)                              ,max(cur_node.left.val,max_val) ) )
+                if node.left:
+                    queue.append((node.left, min(node.val, min_val), max(node.val, max_val)))
                     
-                if cur_node.right:
-                    q.append( (cur_node.right,min(cur_node.right.val,min_val),max(cur_node.right.val,max_val) ) )
+                if node.right:
+                    queue.append((node.right, min(node.val, min_val), max(node.val, max_val)))
                     
-                    
-                    
-        return res 
+        return answer
         
