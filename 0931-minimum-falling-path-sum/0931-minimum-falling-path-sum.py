@@ -17,8 +17,9 @@ class Solution:
                                                recurBro(i+1,j+1,hmap))
             return hmap[(i,j)]
         min_sum = float('inf')
+        memo = {}
         for i in range(cols):
-            min_sum = min(min_sum , recurBro(0,i,{}))
+            min_sum = min(min_sum , recurBro(0,i,memo))
         return min_sum
         
         
