@@ -13,6 +13,4 @@ class Solution:
 
         self.dfs(0,visited,rooms)
 
-        if False in visited:
-            return False
-        return True        
+        return all(visited)      
