@@ -1,19 +1,21 @@
-# Definition for a binary tree node.
-# class TreeNode:
-#     def __init__(self, val=0, left=None, right=None):
-#         self.val = val
-#         self.left = left
-#         self.right = right
+from collections import deque
 class Solution:
-    def preorder(self,node,ans):
-        if not node:
-            return
-        ans.append(node.val)
-        self.preorder(node.left,ans)
-        self.preorder(node.right,ans)
-
-
     def preorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
-        ans = []
-        self.preorder(root,ans)
-        return ans 
+        if not root:
+            return []
+
+        stack = []
+        stack.append(root)
+        ans   = []
+        while stack:
+            cur = stack.pop()
+            ans.append(cur.val)
+
+            if cur.right:
+                stack.append(cur.right)
+
+            if cur.left:
+                stack.append(cur.left)
+
+
+        return ans
