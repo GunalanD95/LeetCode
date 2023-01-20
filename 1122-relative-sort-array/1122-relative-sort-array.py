@@ -1,31 +1,31 @@
 class Solution:
-    def relativeSortArray(self, arr1: List[int], arr2: List[int]) -> List[int]:
-        arr1.sort()
+    def relativeSortArray(self, A: List[int], B: List[int]) -> List[int]:
+        A.sort()
+        indxMap = Counter(A)
+        OrdDict = defaultdict(int)
 
-        bmap = {}
-        for i in arr2:
-            if i not in bmap:
-                bmap[i] = 1
+        for idx in range(len(B)):
+            num = B[idx]
+            if num in indxMap:
+                OrdDict[num] = (idx,0)
+        for num in A:
+            if num in OrdDict:
+                indx , val = OrdDict[num]
+                OrdDict[num] = (indx,val+1)
             else:
-                bmap[i] += 1
-
-        amap = {}
-        for i in arr1:
-            if i not in amap:
-                amap[i] = 1
+                idx += 1
+                OrdDict[num] = (idx,1)
+            
+        res = []  
+        for num in OrdDict:
+            key = num
+            _ , count = OrdDict[num]
+            if count == 0:
+                res.append(key)
             else:
-                amap[i] += 1
-
-        ans = []
-        for k in bmap:
-            if k in amap:
-                while amap[k] > 0:
-                    ans.append(k)
-                    amap[k] -= 1
-
-        for jk in amap:
-            while amap[jk] > 0:
-                ans.append(jk)
-                amap[jk] -= 1
+                while count != 0:
+                    res.append(key)
+                    count -= 1
                 
-        return ans 
+                
+        return res
