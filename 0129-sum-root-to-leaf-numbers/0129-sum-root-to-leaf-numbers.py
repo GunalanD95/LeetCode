@@ -7,15 +7,17 @@
 class Solution:
     def sumNumbers(self, root: Optional[TreeNode]) -> int:
         self.total_sum = 0
-        def preorder(cur_string,node):
+        def preorder(cur_sum,node):
             if not node:
-                return ''
-            if not node.left and not node.right:
-                cur_string = cur_string + str(node.val)
-                self.total_sum += int(cur_string)
                 return 
-            left  = preorder(cur_string + str(node.val) , node.left)
-            right = preorder(cur_string + str(node.val)  , node.right)
-        preorder('',root)
+            
+            cur_sum = cur_sum * 10 + node.val
+            
+            if not node.left and not node.right:
+                self.total_sum += cur_sum
+                return 
+            left  = preorder(cur_sum , node.left)
+            right = preorder(cur_sum , node.right)
+        preorder(0,root)
         return self.total_sum
         
