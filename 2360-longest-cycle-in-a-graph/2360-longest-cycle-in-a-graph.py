@@ -9,7 +9,7 @@ class Solution:
             else:
                 if distance[child] > 0:
                     self.max_len = max(self.max_len,steps+1 - distance[child])
-                    distance[child] = 0
+                    # distance[child] = 0
                 else:
                     return 
 
