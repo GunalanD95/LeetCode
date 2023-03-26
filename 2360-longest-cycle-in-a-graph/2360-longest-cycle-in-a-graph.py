@@ -5,11 +5,11 @@ class Solution:
             if not visited[child]:
                 distance[child] = steps+1
                 self.dfs(child,visited,adj,distance,steps+1)
-                distance[child] = -(distance[child])
+                distance[child] = 0
             else:
                 if distance[child] > 0:
                     self.max_len = max(self.max_len,steps+1 - distance[child])
-                    distance[child] = -(distance[child])
+                    distance[child] = 0
                 else:
                     return 
 
@@ -28,7 +28,7 @@ class Solution:
             if not visited[node]:
                 distance[node] = 1
                 self.dfs(node,visited,adj,distance,1)
-                distance[node] = -1
+                distance[node] = 0
         return self.max_len
             
                 
