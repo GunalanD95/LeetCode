@@ -1,30 +1,18 @@
 class Solution:
     def maxVowels(self, s: str, k: int) -> int:
-        hmap = defaultdict(int)
-        N    = len(s)
-        vowels = {'a','e','i','o','u'}
-        
-        
-        max_val = 0
-        q       = deque()
-        for idx in range(k):
-            if s[idx] in vowels:
-                q.append(s[idx])
-                
-                
-        res = len(q)
-        left = 0
-        for right in range(k,N):
-            if q and q[0] == s[left]: 
-                q.popleft()
-                
-            if s[right] in vowels:
-                q.append(s[right])
-            
-            res = max(res,len(q))
-            left += 1
-            
-        
-        return res
-        
-        
+        N = len(s)
+        vowels = {'a', 'e', 'i', 'o', 'u'}
+
+        # count vowels in the first window
+        count = sum(s[i] in vowels for i in range(k))
+        max_count = count
+
+        # move the window by one character at a time
+        for i in range(k, N):
+            if s[i - k] in vowels:
+                count -= 1
+            if s[i] in vowels:
+                count += 1
+            max_count = max(max_count, count)
+
+        return max_count
