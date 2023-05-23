@@ -11,6 +11,7 @@ class KthLargest:
     def insert(self, val: int):
         hq.heappush(self.minheap,val) # push current element in the minheap
         
+        # remove all elements from front (smaller)
         while len(self.minheap) > self.k:
             hq.heappop(self.minheap)
         
