@@ -7,7 +7,6 @@ class Solution:
 
         N = len(A)
         ans = []
-
         for i in range(k):
             cur_ele = A[i]
             while q and cur_ele > q[-1]: 
