@@ -1,50 +1,45 @@
 class Node:
-    def __init__(self, key, val):
+    def __init__(self,key=-1,val=-1,next=None):
         self.key = key
         self.val = val
-        self.prev = None
-        self.next = None
-
-
+        self.next = next
+        
 class MyHashMap:
 
     def __init__(self):
-        self.dll = Node(-1, -1)
+        self.map = [Node() for i in range(1000)]
 
-    def search(self, key, value=None):
-        temp = self.dll
-
-        while temp:
-            if temp.key == key:
-                if value is not None:
-                    temp.val = value
-                return temp
-            temp = temp.next
-        return None
-
+    def hash(self,key):
+        return key % len(self.map)
+    
     def put(self, key: int, value: int) -> None:
-        if not self.search(key, value):
-            newNode = Node(key, value)
-            tempheadnext = self.dll.next
-
-            if tempheadnext:
-                tempheadnext.prev = newNode
-            newNode.next = tempheadnext
-            newNode.prev = self.dll
-            self.dll.next = newNode
+        cur = self.map[self.hash(key)]
+        
+        while cur.next:
+            if cur.next.key == key:
+                cur.next.val = value
+                return 
+            cur = cur.next
+            
+        cur.next = Node(key,value)
 
     def get(self, key: int) -> int:
-        res = self.search(key)
-        return res.val if res else -1
-
+        cur = self.map[self.hash(key)]
+        while cur:
+            if cur.key == key:
+                return cur.val
+            cur = cur.next
+        return -1
+    
     def remove(self, key: int) -> None:
-        node = self.search(key)
-        if node:
-            prevnode = node.prev
-            nextNode = node.next
-
-            if prevnode:
-                prevnode.next = nextNode
-
-            if nextNode:
-                nextNode.prev = prevnode
+        cur = self.map[self.hash(key)]
+        while cur and cur.next:
+            if cur.next.key == key:
+                cur.next = cur.next.next
+                return
+            cur = cur.next
+# Your MyHashMap object will be instantiated and called as such:
+# obj = MyHashMap()
+# obj.put(key,value)
+# param_2 = obj.get(key)
+# obj.remove(key)
