@@ -17,3 +17,13 @@ class Solution:
         print("vow_count2",vow_count1,vow_count2)
         
         return vow_count1 == vow_count2
+    
+    
+        #  ADD AND SUBTRACT 
+        c, v, n = 0, set(['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']), len(s) // 2
+        for i in range(n):
+            if s[i] in v:
+                c += 1
+            if s[i+n] in v:
+                c -= 1
+        return c == 0
