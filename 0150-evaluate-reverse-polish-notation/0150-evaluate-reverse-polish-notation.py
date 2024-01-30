@@ -20,5 +20,4 @@ class Solution:
                 elif operator =='/':
                     stack.append(int(val2)/(int(val1)))
 
-
         return int(stack[0])
