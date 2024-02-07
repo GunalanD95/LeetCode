@@ -6,6 +6,7 @@ class Solution:
         max_heap = []
         for i in CounterMap:
             hq.heappush(max_heap, (-CounterMap[i] , i) )
+            
         ans = ''
         while max_heap:
             val , char = hq.heappop(max_heap)
