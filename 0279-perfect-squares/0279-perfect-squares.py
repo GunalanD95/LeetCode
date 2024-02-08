@@ -4,7 +4,7 @@ class Solution:
         if dp[num] != -1:
             return dp[num]
         i = 1
-        count = num
+        count = float('inf')
         while i * i <= num:
             dpCount = self.dpSquare(num - (i*i),dp)
             count   = min(count,dpCount + 1)
