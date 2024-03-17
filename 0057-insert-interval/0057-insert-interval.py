@@ -9,7 +9,8 @@ class Solution:
         while i < N and intervals[i][1] < newInterval[0]:
             res.append(intervals[i])
             i += 1
-
+        
+        print('ans',res)
         # now merge overlapping intervals
         while i < N and intervals[i][0] <= newInterval[1]:
             st = min(intervals[i][0],newInterval[0])
