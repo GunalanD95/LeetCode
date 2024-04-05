@@ -4,28 +4,26 @@
 #         self.val = val
 #         self.left = left
 #         self.right = right
-
 class Solution:
-    def averageOfSubtree(self, root: Optional[TreeNode]) -> int:
-        total_count = 0
-
+    def averageOfSubtree(self, root: TreeNode) -> int:        
+        total = 0
         def dfs(node):
-            nonlocal total_count
+            nonlocal total
             if not node:
-                return 0, 0
-
-            left_count, left_sum = dfs(node.left)
-            right_count, right_sum = dfs(node.right)
-
-            sub_tree_count = 1 + left_count + right_count
-            sub_tree_sum = node.val + left_sum + right_sum
-
-            sub_tree_average = sub_tree_sum // sub_tree_count
-
-            if sub_tree_average == node.val:
-                total_count += 1
-
-            return sub_tree_count, sub_tree_sum
-
+                return 0,0
+            
+            left_sum , left_count  = dfs(node.left)
+            right_sum, right_count = dfs(node.right)
+        
+            
+            cur_sum  = left_sum + right_sum + node.val
+            total_ele_count = left_count + right_count + 1
+            
+            if (cur_sum//total_ele_count) == node.val:
+                total += 1
+            
+            return cur_sum , total_ele_count
+            
+        
         dfs(root)
-        return total_count
+        return total
