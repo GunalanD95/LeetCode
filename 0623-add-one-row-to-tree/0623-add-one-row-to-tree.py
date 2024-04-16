@@ -9,9 +9,7 @@ class Solution:
             new_root.left = root
             return new_root
         
-        lvl = 1
-        target_node = None
-        
+        lvl = 1        
         while q:
             for _ in range(len(q)):
                 cur_node = q.popleft()
