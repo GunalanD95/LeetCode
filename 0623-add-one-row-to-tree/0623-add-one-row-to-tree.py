@@ -13,11 +13,19 @@ class Solution:
         target_node = None
         
         while q:
-            cur_nodes = []
             for _ in range(len(q)):
                 cur_node = q.popleft()
                 
-                cur_nodes.append(cur_node)
+                if lvl == depth -1:
+                    temp_node1 = TreeNode(val)
+                    temp_node2 = TreeNode(val)
+                    
+                    temp_node1.left  = cur_node.left
+                    temp_node2.right = cur_node.right
+                    
+                    cur_node.left  = temp_node1
+                    cur_node.right = temp_node2
+                
                 
                 if cur_node.left:
                     q.append(cur_node.left)
@@ -28,16 +36,6 @@ class Solution:
                 break
             lvl += 1
          
-        for target_node in cur_nodes:
-            temp_node1 = TreeNode(val)
-            temp_node2 = TreeNode(val)
-
-            temp_node1.left = target_node.left
-            temp_node2.right = target_node.right
-
-            target_node.left = temp_node1
-            target_node.right = temp_node2
-        
         return root
         
         
