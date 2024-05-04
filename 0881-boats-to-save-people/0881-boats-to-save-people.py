@@ -23,13 +23,11 @@ class Solution:
     def numRescueBoats(self, people: List[int], limit: int) -> int:
         N = len(people) 
         people.sort()
-        
         low      = 1
         high     = N 
         ans      = 0
         while low <= high:
             mid = (low + high)//2
-            print("mid",mid,"ans",self.check(people,mid,limit))
             if self.check(people,mid,limit):
                 ans = mid
                 high = mid - 1
