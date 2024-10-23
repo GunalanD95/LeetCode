@@ -18,13 +18,14 @@ class Solution:
         levl = 1
         while q:
             cur_sum = defaultdict(int)
-            
+            total_sum = 0
             cur_nodes = []
             for _ in range(len(q)):
                 node, parent= q.popleft()
                 cur_nodes.append((node,parent))
                 if parent:
                     cur_sum[parent] += node.val
+                    total_sum += node.val
                 
                 if node.left:
                     q.append((node.left,node))
@@ -33,7 +34,7 @@ class Solution:
                     q.append((node.right,node))
                 
             for node,parent in cur_nodes:
-                node.val = sum(cur_sum.values()) - cur_sum[parent]
+                node.val = total_sum - cur_sum[parent]
             levl += 1
             
             
