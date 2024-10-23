@@ -32,9 +32,7 @@ class Solution:
                 if node.right:
                     q.append((node.right,node))
                 
-            # print(levl,cur_sum,cur_nodes)
             for node,parent in cur_nodes:
-                print(node.val, sum(cur_sum.values()) - cur_sum[parent])
                 node.val = sum(cur_sum.values()) - cur_sum[parent]
             levl += 1
             
