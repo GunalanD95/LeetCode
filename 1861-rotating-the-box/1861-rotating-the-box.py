@@ -3,22 +3,16 @@ class Solution:
         rows = len(box)
         cols = len(box[0])
         
-        # for each stone move right in its row (before obs,stone)
+        # Simulate gravity for each row
         for row in range(rows):
-            for col in range(cols-1,-1,-1):
-                if box[row][col] != '#':
-                    continue
-                    
-                sc = col+1
-
-                found = False
-                while sc < cols and box[row][sc] == '.':
-                    found = True
-                    sc += 1
-                    
-                if found:
-                    box[row][col] = '.'
-                    box[row][sc-1]   = '#'
+            empty_pos = cols - 1  # Start at the rightmost position
+            for col in range(cols - 1, -1, -1):
+                if box[row][col] == '#':  # Stone
+                    box[row][col] = '.'  # Remove stone from current position
+                    box[row][empty_pos] = '#'  # Move stone to the farthest right position
+                    empty_pos -= 1  # Update empty position
+                elif box[row][col] == '*':  # Obstacle
+                    empty_pos = col - 1  # Reset empty position to left of obstacle
                     
 
         # Create a new matrix with transposed dimensions
