@@ -1,38 +1,31 @@
 import heapq as hq
 
 class Solution:
-    def getSuperParent(self,node,Parent):
-        if node == Parent[node]:
-            return node 
-
-        Parent[node] = self.getSuperParent(Parent[node],Parent)
-
-        return Parent[node]
-    
     def minCostConnectPoints(self, points: List[List[int]]) -> int:
         N = len(points)
-        edges = []
-#         |xi - xj| + |yi - yj|
-        for idx,(x1,y1) in enumerate(points):
-            for jdx,(x2,y2) in enumerate(points):
-                if idx == jdx:
-                    continue
-                val = abs(x1-x2) + abs(y1-y2)
-                edges.append((idx,jdx,val))
-                
-        edges.sort(key=lambda x:x[2])
-        
-        Parent = [i for i in range(N)] 
+        min_heap = [(0, 0)]  # (cost, starting point)
         total_cost = 0
-        
-        for u , v , w in edges:
+        seen = set()
+        edges_used = 0  # To track number of edges added to MST
 
-            uParent = self.getSuperParent(u,Parent)
-            vParent = self.getSuperParent(v,Parent)
+        while len(seen) < N:
+            cost, curr = hq.heappop(min_heap)
+            
+            # If the node is already seen, skip it
+            if curr in seen:
+                continue
+            
+            # Add node to the MST
+            seen.add(curr)
+            total_cost += cost
+            edges_used += 1
 
-            if uParent != vParent:
-                total_cost += w
-
-                Parent[max(uParent,vParent)] = Parent[min(uParent,vParent)]
+            # Add all edges from the current node to the heap
+            for next_node in range(N):
+                if next_node not in seen:
+                    x1, y1 = points[curr]
+                    x2, y2 = points[next_node]
+                    distance = abs(x1 - x2) + abs(y1 - y2)
+                    hq.heappush(min_heap, (distance, next_node))
 
         return total_cost
