@@ -9,6 +9,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0238-product-of-array-except-self](https://github.com/GunalanD95/LeetCode/tree/master/0238-product-of-array-except-self) |
 | [1006-vowel-spellchecker](https://github.com/GunalanD95/LeetCode/tree/master/1006-vowel-spellchecker) |
 | [1025-minimum-cost-for-tickets](https://github.com/GunalanD95/LeetCode/tree/master/1025-minimum-cost-for-tickets) |
+| [1524-string-matching-in-an-array](https://github.com/GunalanD95/LeetCode/tree/master/1524-string-matching-in-an-array) |
 | [1744-number-of-ways-to-form-a-target-string-given-a-dictionary](https://github.com/GunalanD95/LeetCode/tree/master/1744-number-of-ways-to-form-a-target-string-given-a-dictionary) |
 | [1895-minimum-number-of-operations-to-move-all-balls-to-each-box](https://github.com/GunalanD95/LeetCode/tree/master/1895-minimum-number-of-operations-to-move-all-balls-to-each-box) |
 | [2358-number-of-ways-to-split-array](https://github.com/GunalanD95/LeetCode/tree/master/2358-number-of-ways-to-split-array) |
@@ -19,6 +20,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0030-substring-with-concatenation-of-all-words](https://github.com/GunalanD95/LeetCode/tree/master/0030-substring-with-concatenation-of-all-words) |
 | [1006-vowel-spellchecker](https://github.com/GunalanD95/LeetCode/tree/master/1006-vowel-spellchecker) |
+| [1524-string-matching-in-an-array](https://github.com/GunalanD95/LeetCode/tree/master/1524-string-matching-in-an-array) |
 | [1537-maximum-score-after-splitting-a-string](https://github.com/GunalanD95/LeetCode/tree/master/1537-maximum-score-after-splitting-a-string) |
 | [1744-number-of-ways-to-form-a-target-string-given-a-dictionary](https://github.com/GunalanD95/LeetCode/tree/master/1744-number-of-ways-to-form-a-target-string-given-a-dictionary) |
 | [1895-minimum-number-of-operations-to-move-all-balls-to-each-box](https://github.com/GunalanD95/LeetCode/tree/master/1895-minimum-number-of-operations-to-move-all-balls-to-each-box) |
@@ -47,4 +49,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2358-number-of-ways-to-split-array](https://github.com/GunalanD95/LeetCode/tree/master/2358-number-of-ways-to-split-array) |
 | [2465-shifting-letters-ii](https://github.com/GunalanD95/LeetCode/tree/master/2465-shifting-letters-ii) |
 | [2691-count-vowel-strings-in-ranges](https://github.com/GunalanD95/LeetCode/tree/master/2691-count-vowel-strings-in-ranges) |
+## String Matching
+|  |
+| ------- |
+| [1524-string-matching-in-an-array](https://github.com/GunalanD95/LeetCode/tree/master/1524-string-matching-in-an-array) |
 <!---LeetCode Topics End-->
