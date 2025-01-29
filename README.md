@@ -121,6 +121,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Breadth-First Search
 |  |
 | ------- |
+| [0684-redundant-connection](https://github.com/GunalanD95/LeetCode/tree/master/0684-redundant-connection) |
 | [1396-count-servers-that-communicate](https://github.com/GunalanD95/LeetCode/tree/master/1396-count-servers-that-communicate) |
 | [1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid](https://github.com/GunalanD95/LeetCode/tree/master/1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid) |
 | [1558-course-schedule-iv](https://github.com/GunalanD95/LeetCode/tree/master/1558-course-schedule-iv) |
@@ -129,6 +130,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Graph
 |  |
 | ------- |
+| [0684-redundant-connection](https://github.com/GunalanD95/LeetCode/tree/master/0684-redundant-connection) |
 | [1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid](https://github.com/GunalanD95/LeetCode/tree/master/1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid) |
 | [1558-course-schedule-iv](https://github.com/GunalanD95/LeetCode/tree/master/1558-course-schedule-iv) |
 ## Heap (Priority Queue)
@@ -156,12 +158,14 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Depth-First Search
 |  |
 | ------- |
+| [0684-redundant-connection](https://github.com/GunalanD95/LeetCode/tree/master/0684-redundant-connection) |
 | [1396-count-servers-that-communicate](https://github.com/GunalanD95/LeetCode/tree/master/1396-count-servers-that-communicate) |
 | [1558-course-schedule-iv](https://github.com/GunalanD95/LeetCode/tree/master/1558-course-schedule-iv) |
 | [2764-maximum-number-of-fish-in-a-grid](https://github.com/GunalanD95/LeetCode/tree/master/2764-maximum-number-of-fish-in-a-grid) |
 ## Union Find
 |  |
 | ------- |
+| [0684-redundant-connection](https://github.com/GunalanD95/LeetCode/tree/master/0684-redundant-connection) |
 | [1396-count-servers-that-communicate](https://github.com/GunalanD95/LeetCode/tree/master/1396-count-servers-that-communicate) |
 | [2764-maximum-number-of-fish-in-a-grid](https://github.com/GunalanD95/LeetCode/tree/master/2764-maximum-number-of-fish-in-a-grid) |
 | [3219-make-lexicographically-smallest-array-by-swapping-elements](https://github.com/GunalanD95/LeetCode/tree/master/3219-make-lexicographically-smallest-array-by-swapping-elements) |
