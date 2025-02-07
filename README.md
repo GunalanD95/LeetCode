@@ -33,6 +33,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2792-neighboring-bitwise-xor](https://github.com/GunalanD95/LeetCode/tree/master/2792-neighboring-bitwise-xor) |
 | [3219-make-lexicographically-smallest-array-by-swapping-elements](https://github.com/GunalanD95/LeetCode/tree/master/3219-make-lexicographically-smallest-array-by-swapping-elements) |
 | [3309-count-prefix-and-suffix-pairs-i](https://github.com/GunalanD95/LeetCode/tree/master/3309-count-prefix-and-suffix-pairs-i) |
+| [3434-find-the-number-of-distinct-colors-among-the-balls](https://github.com/GunalanD95/LeetCode/tree/master/3434-find-the-number-of-distinct-colors-among-the-balls) |
 ## String
 |  |
 | ------- |
@@ -65,6 +66,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1502-construct-k-palindrome-strings](https://github.com/GunalanD95/LeetCode/tree/master/1502-construct-k-palindrome-strings) |
 | [2685-first-completely-painted-row-or-column](https://github.com/GunalanD95/LeetCode/tree/master/2685-first-completely-painted-row-or-column) |
 | [2766-find-the-prefix-common-array-of-two-arrays](https://github.com/GunalanD95/LeetCode/tree/master/2766-find-the-prefix-common-array-of-two-arrays) |
+| [3434-find-the-number-of-distinct-colors-among-the-balls](https://github.com/GunalanD95/LeetCode/tree/master/3434-find-the-number-of-distinct-colors-among-the-balls) |
 ## Sliding Window
 |  |
 | ------- |
@@ -186,4 +188,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [1558-course-schedule-iv](https://github.com/GunalanD95/LeetCode/tree/master/1558-course-schedule-iv) |
+## Simulation
+|  |
+| ------- |
+| [3434-find-the-number-of-distinct-colors-among-the-balls](https://github.com/GunalanD95/LeetCode/tree/master/3434-find-the-number-of-distinct-colors-among-the-balls) |
 <!---LeetCode Topics End-->
