@@ -32,6 +32,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2448-count-number-of-bad-pairs](https://github.com/GunalanD95/LeetCode/tree/master/2448-count-number-of-bad-pairs) |
 | [2465-shifting-letters-ii](https://github.com/GunalanD95/LeetCode/tree/master/2465-shifting-letters-ii) |
 | [2533-bitwise-xor-of-all-pairings](https://github.com/GunalanD95/LeetCode/tree/master/2533-bitwise-xor-of-all-pairings) |
+| [2551-apply-operations-to-an-array](https://github.com/GunalanD95/LeetCode/tree/master/2551-apply-operations-to-an-array) |
 | [2685-first-completely-painted-row-or-column](https://github.com/GunalanD95/LeetCode/tree/master/2685-first-completely-painted-row-or-column) |
 | [2691-count-vowel-strings-in-ranges](https://github.com/GunalanD95/LeetCode/tree/master/2691-count-vowel-strings-in-ranges) |
 | [2764-maximum-number-of-fish-in-a-grid](https://github.com/GunalanD95/LeetCode/tree/master/2764-maximum-number-of-fish-in-a-grid) |
@@ -227,6 +228,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [2021-remove-all-occurrences-of-a-substring](https://github.com/GunalanD95/LeetCode/tree/master/2021-remove-all-occurrences-of-a-substring) |
+| [2551-apply-operations-to-an-array](https://github.com/GunalanD95/LeetCode/tree/master/2551-apply-operations-to-an-array) |
 | [3332-minimum-operations-to-exceed-threshold-value-ii](https://github.com/GunalanD95/LeetCode/tree/master/3332-minimum-operations-to-exceed-threshold-value-ii) |
 | [3434-find-the-number-of-distinct-colors-among-the-balls](https://github.com/GunalanD95/LeetCode/tree/master/3434-find-the-number-of-distinct-colors-among-the-balls) |
 | [3447-clear-digits](https://github.com/GunalanD95/LeetCode/tree/master/3447-clear-digits) |
@@ -274,4 +276,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0925-construct-binary-tree-from-preorder-and-postorder-traversal](https://github.com/GunalanD95/LeetCode/tree/master/0925-construct-binary-tree-from-preorder-and-postorder-traversal) |
+## Two Pointers
+|  |
+| ------- |
+| [2551-apply-operations-to-an-array](https://github.com/GunalanD95/LeetCode/tree/master/2551-apply-operations-to-an-array) |
 <!---LeetCode Topics End-->
