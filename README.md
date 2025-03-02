@@ -7,6 +7,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0238-product-of-array-except-self](https://github.com/GunalanD95/LeetCode/tree/master/0238-product-of-array-except-self) |
+| [0493-reverse-pairs](https://github.com/GunalanD95/LeetCode/tree/master/0493-reverse-pairs) |
 | [0854-making-a-large-island](https://github.com/GunalanD95/LeetCode/tree/master/0854-making-a-large-island) |
 | [0905-length-of-longest-fibonacci-subsequence](https://github.com/GunalanD95/LeetCode/tree/master/0905-length-of-longest-fibonacci-subsequence) |
 | [0925-construct-binary-tree-from-preorder-and-postorder-traversal](https://github.com/GunalanD95/LeetCode/tree/master/0925-construct-binary-tree-from-preorder-and-postorder-traversal) |
@@ -243,6 +244,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Ordered Set
 |  |
 | ------- |
+| [0493-reverse-pairs](https://github.com/GunalanD95/LeetCode/tree/master/0493-reverse-pairs) |
 | [2434-design-a-number-container-system](https://github.com/GunalanD95/LeetCode/tree/master/2434-design-a-number-container-system) |
 ## Math
 |  |
@@ -277,10 +279,27 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Divide and Conquer
 |  |
 | ------- |
+| [0493-reverse-pairs](https://github.com/GunalanD95/LeetCode/tree/master/0493-reverse-pairs) |
 | [0925-construct-binary-tree-from-preorder-and-postorder-traversal](https://github.com/GunalanD95/LeetCode/tree/master/0925-construct-binary-tree-from-preorder-and-postorder-traversal) |
 ## Two Pointers
 |  |
 | ------- |
 | [2551-apply-operations-to-an-array](https://github.com/GunalanD95/LeetCode/tree/master/2551-apply-operations-to-an-array) |
 | [2707-merge-two-2d-arrays-by-summing-values](https://github.com/GunalanD95/LeetCode/tree/master/2707-merge-two-2d-arrays-by-summing-values) |
+## Binary Search
+|  |
+| ------- |
+| [0493-reverse-pairs](https://github.com/GunalanD95/LeetCode/tree/master/0493-reverse-pairs) |
+## Binary Indexed Tree
+|  |
+| ------- |
+| [0493-reverse-pairs](https://github.com/GunalanD95/LeetCode/tree/master/0493-reverse-pairs) |
+## Segment Tree
+|  |
+| ------- |
+| [0493-reverse-pairs](https://github.com/GunalanD95/LeetCode/tree/master/0493-reverse-pairs) |
+## Merge Sort
+|  |
+| ------- |
+| [0493-reverse-pairs](https://github.com/GunalanD95/LeetCode/tree/master/0493-reverse-pairs) |
 <!---LeetCode Topics End-->
