@@ -58,6 +58,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0030-substring-with-concatenation-of-all-words](https://github.com/GunalanD95/LeetCode/tree/master/0030-substring-with-concatenation-of-all-words) |
 | [0071-simplify-path](https://github.com/GunalanD95/LeetCode/tree/master/0071-simplify-path) |
+| [0125-valid-palindrome](https://github.com/GunalanD95/LeetCode/tree/master/0125-valid-palindrome) |
 | [0952-word-subsets](https://github.com/GunalanD95/LeetCode/tree/master/0952-word-subsets) |
 | [1006-vowel-spellchecker](https://github.com/GunalanD95/LeetCode/tree/master/1006-vowel-spellchecker) |
 | [1093-recover-a-tree-from-preorder-traversal](https://github.com/GunalanD95/LeetCode/tree/master/1093-recover-a-tree-from-preorder-traversal) |
@@ -323,6 +324,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0088-merge-sorted-array](https://github.com/GunalanD95/LeetCode/tree/master/0088-merge-sorted-array) |
+| [0125-valid-palindrome](https://github.com/GunalanD95/LeetCode/tree/master/0125-valid-palindrome) |
 | [2551-apply-operations-to-an-array](https://github.com/GunalanD95/LeetCode/tree/master/2551-apply-operations-to-an-array) |
 | [2707-merge-two-2d-arrays-by-summing-values](https://github.com/GunalanD95/LeetCode/tree/master/2707-merge-two-2d-arrays-by-summing-values) |
 ## Binary Search
