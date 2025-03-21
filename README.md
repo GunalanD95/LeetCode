@@ -56,6 +56,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0030-substring-with-concatenation-of-all-words](https://github.com/GunalanD95/LeetCode/tree/master/0030-substring-with-concatenation-of-all-words) |
+| [0071-simplify-path](https://github.com/GunalanD95/LeetCode/tree/master/0071-simplify-path) |
 | [0952-word-subsets](https://github.com/GunalanD95/LeetCode/tree/master/0952-word-subsets) |
 | [1006-vowel-spellchecker](https://github.com/GunalanD95/LeetCode/tree/master/1006-vowel-spellchecker) |
 | [1093-recover-a-tree-from-preorder-traversal](https://github.com/GunalanD95/LeetCode/tree/master/1093-recover-a-tree-from-preorder-traversal) |
@@ -167,6 +168,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Stack
 |  |
 | ------- |
+| [0071-simplify-path](https://github.com/GunalanD95/LeetCode/tree/master/0071-simplify-path) |
 | [2021-remove-all-occurrences-of-a-substring](https://github.com/GunalanD95/LeetCode/tree/master/2021-remove-all-occurrences-of-a-substring) |
 | [2221-check-if-a-parentheses-string-can-be-valid](https://github.com/GunalanD95/LeetCode/tree/master/2221-check-if-a-parentheses-string-can-be-valid) |
 | [3447-clear-digits](https://github.com/GunalanD95/LeetCode/tree/master/3447-clear-digits) |
