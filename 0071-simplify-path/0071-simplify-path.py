@@ -1,11 +1,10 @@
 class Solution:
     def simplifyPath(self, path: str) -> str:
-        
         stack = []
-        cur   = ''
-        
-        for c in path + '/':
-            if c == '/':
+
+        cur  = ''
+        for pa  in path + '/':
+            if pa == '/':
                 if cur == '..':
                     if stack:
                         stack.pop()
@@ -13,7 +12,6 @@ class Solution:
                     stack.append(cur)
                 cur = ''
             else:
-                cur += c
-                
-        return '/' + '/'.join(stack)
-        
+                cur += pa
+
+        return '/' + '/'.join(stack) 
