@@ -6,6 +6,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Array
 |  |
 | ------- |
+| [0088-merge-sorted-array](https://github.com/GunalanD95/LeetCode/tree/master/0088-merge-sorted-array) |
 | [0238-product-of-array-except-self](https://github.com/GunalanD95/LeetCode/tree/master/0238-product-of-array-except-self) |
 | [0493-reverse-pairs](https://github.com/GunalanD95/LeetCode/tree/master/0493-reverse-pairs) |
 | [0854-making-a-large-island](https://github.com/GunalanD95/LeetCode/tree/master/0854-making-a-large-island) |
@@ -229,6 +230,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Sorting
 |  |
 | ------- |
+| [0088-merge-sorted-array](https://github.com/GunalanD95/LeetCode/tree/master/0088-merge-sorted-array) |
 | [1256-rank-transform-of-an-array](https://github.com/GunalanD95/LeetCode/tree/master/1256-rank-transform-of-an-array) |
 | [3219-make-lexicographically-smallest-array-by-swapping-elements](https://github.com/GunalanD95/LeetCode/tree/master/3219-make-lexicographically-smallest-array-by-swapping-elements) |
 ## Depth-First Search
@@ -320,6 +322,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Two Pointers
 |  |
 | ------- |
+| [0088-merge-sorted-array](https://github.com/GunalanD95/LeetCode/tree/master/0088-merge-sorted-array) |
 | [2551-apply-operations-to-an-array](https://github.com/GunalanD95/LeetCode/tree/master/2551-apply-operations-to-an-array) |
 | [2707-merge-two-2d-arrays-by-summing-values](https://github.com/GunalanD95/LeetCode/tree/master/2707-merge-two-2d-arrays-by-summing-values) |
 ## Binary Search
