@@ -7,6 +7,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0088-merge-sorted-array](https://github.com/GunalanD95/LeetCode/tree/master/0088-merge-sorted-array) |
+| [0162-find-peak-element](https://github.com/GunalanD95/LeetCode/tree/master/0162-find-peak-element) |
 | [0238-product-of-array-except-self](https://github.com/GunalanD95/LeetCode/tree/master/0238-product-of-array-except-self) |
 | [0493-reverse-pairs](https://github.com/GunalanD95/LeetCode/tree/master/0493-reverse-pairs) |
 | [0854-making-a-large-island](https://github.com/GunalanD95/LeetCode/tree/master/0854-making-a-large-island) |
@@ -338,6 +339,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Binary Search
 |  |
 | ------- |
+| [0162-find-peak-element](https://github.com/GunalanD95/LeetCode/tree/master/0162-find-peak-element) |
 | [0493-reverse-pairs](https://github.com/GunalanD95/LeetCode/tree/master/0493-reverse-pairs) |
 | [1335-maximum-candies-allocated-to-k-children](https://github.com/GunalanD95/LeetCode/tree/master/1335-maximum-candies-allocated-to-k-children) |
 | [2614-maximum-count-of-positive-integer-and-negative-integer](https://github.com/GunalanD95/LeetCode/tree/master/2614-maximum-count-of-positive-integer-and-negative-integer) |
