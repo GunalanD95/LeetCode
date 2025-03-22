@@ -24,6 +24,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid](https://github.com/GunalanD95/LeetCode/tree/master/1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid) |
 | [1524-string-matching-in-an-array](https://github.com/GunalanD95/LeetCode/tree/master/1524-string-matching-in-an-array) |
 | [1631-number-of-sub-arrays-with-odd-sum](https://github.com/GunalanD95/LeetCode/tree/master/1631-number-of-sub-arrays-with-odd-sum) |
+| [1713-dot-product-of-two-sparse-vectors](https://github.com/GunalanD95/LeetCode/tree/master/1713-dot-product-of-two-sparse-vectors) |
 | [1744-number-of-ways-to-form-a-target-string-given-a-dictionary](https://github.com/GunalanD95/LeetCode/tree/master/1744-number-of-ways-to-form-a-target-string-given-a-dictionary) |
 | [1876-map-of-highest-peak](https://github.com/GunalanD95/LeetCode/tree/master/1876-map-of-highest-peak) |
 | [1878-check-if-array-is-sorted-and-rotated](https://github.com/GunalanD95/LeetCode/tree/master/1878-check-if-array-is-sorted-and-rotated) |
@@ -107,6 +108,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1387-find-elements-in-a-contaminated-binary-tree](https://github.com/GunalanD95/LeetCode/tree/master/1387-find-elements-in-a-contaminated-binary-tree) |
 | [1460-number-of-substrings-containing-all-three-characters](https://github.com/GunalanD95/LeetCode/tree/master/1460-number-of-substrings-containing-all-three-characters) |
 | [1502-construct-k-palindrome-strings](https://github.com/GunalanD95/LeetCode/tree/master/1502-construct-k-palindrome-strings) |
+| [1713-dot-product-of-two-sparse-vectors](https://github.com/GunalanD95/LeetCode/tree/master/1713-dot-product-of-two-sparse-vectors) |
 | [2107-find-unique-binary-string](https://github.com/GunalanD95/LeetCode/tree/master/2107-find-unique-binary-string) |
 | [2220-find-all-possible-recipes-from-given-supplies](https://github.com/GunalanD95/LeetCode/tree/master/2220-find-all-possible-recipes-from-given-supplies) |
 | [2434-design-a-number-container-system](https://github.com/GunalanD95/LeetCode/tree/master/2434-design-a-number-container-system) |
@@ -283,6 +285,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0146-lru-cache](https://github.com/GunalanD95/LeetCode/tree/master/0146-lru-cache) |
 | [1387-find-elements-in-a-contaminated-binary-tree](https://github.com/GunalanD95/LeetCode/tree/master/1387-find-elements-in-a-contaminated-binary-tree) |
 | [1477-product-of-the-last-k-numbers](https://github.com/GunalanD95/LeetCode/tree/master/1477-product-of-the-last-k-numbers) |
+| [1713-dot-product-of-two-sparse-vectors](https://github.com/GunalanD95/LeetCode/tree/master/1713-dot-product-of-two-sparse-vectors) |
 | [2434-design-a-number-container-system](https://github.com/GunalanD95/LeetCode/tree/master/2434-design-a-number-container-system) |
 ## Ordered Set
 |  |
@@ -337,6 +340,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0088-merge-sorted-array](https://github.com/GunalanD95/LeetCode/tree/master/0088-merge-sorted-array) |
 | [0125-valid-palindrome](https://github.com/GunalanD95/LeetCode/tree/master/0125-valid-palindrome) |
 | [0680-valid-palindrome-ii](https://github.com/GunalanD95/LeetCode/tree/master/0680-valid-palindrome-ii) |
+| [1713-dot-product-of-two-sparse-vectors](https://github.com/GunalanD95/LeetCode/tree/master/1713-dot-product-of-two-sparse-vectors) |
 | [2551-apply-operations-to-an-array](https://github.com/GunalanD95/LeetCode/tree/master/2551-apply-operations-to-an-array) |
 | [2707-merge-two-2d-arrays-by-summing-values](https://github.com/GunalanD95/LeetCode/tree/master/2707-merge-two-2d-arrays-by-summing-values) |
 ## Binary Search
