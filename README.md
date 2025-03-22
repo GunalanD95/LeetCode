@@ -199,6 +199,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1876-map-of-highest-peak](https://github.com/GunalanD95/LeetCode/tree/master/1876-map-of-highest-peak) |
 | [2583-divide-nodes-into-the-maximum-number-of-groups](https://github.com/GunalanD95/LeetCode/tree/master/2583-divide-nodes-into-the-maximum-number-of-groups) |
 | [2764-maximum-number-of-fish-in-a-grid](https://github.com/GunalanD95/LeetCode/tree/master/2764-maximum-number-of-fish-in-a-grid) |
+| [2793-count-the-number-of-complete-components](https://github.com/GunalanD95/LeetCode/tree/master/2793-count-the-number-of-complete-components) |
 ## Graph
 |  |
 | ------- |
@@ -207,6 +208,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1558-course-schedule-iv](https://github.com/GunalanD95/LeetCode/tree/master/1558-course-schedule-iv) |
 | [2220-find-all-possible-recipes-from-given-supplies](https://github.com/GunalanD95/LeetCode/tree/master/2220-find-all-possible-recipes-from-given-supplies) |
 | [2583-divide-nodes-into-the-maximum-number-of-groups](https://github.com/GunalanD95/LeetCode/tree/master/2583-divide-nodes-into-the-maximum-number-of-groups) |
+| [2793-count-the-number-of-complete-components](https://github.com/GunalanD95/LeetCode/tree/master/2793-count-the-number-of-complete-components) |
 | [3348-minimum-cost-walk-in-weighted-graph](https://github.com/GunalanD95/LeetCode/tree/master/3348-minimum-cost-walk-in-weighted-graph) |
 ## Heap (Priority Queue)
 |  |
@@ -246,6 +248,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1396-count-servers-that-communicate](https://github.com/GunalanD95/LeetCode/tree/master/1396-count-servers-that-communicate) |
 | [1558-course-schedule-iv](https://github.com/GunalanD95/LeetCode/tree/master/1558-course-schedule-iv) |
 | [2764-maximum-number-of-fish-in-a-grid](https://github.com/GunalanD95/LeetCode/tree/master/2764-maximum-number-of-fish-in-a-grid) |
+| [2793-count-the-number-of-complete-components](https://github.com/GunalanD95/LeetCode/tree/master/2793-count-the-number-of-complete-components) |
 ## Union Find
 |  |
 | ------- |
@@ -254,6 +257,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1396-count-servers-that-communicate](https://github.com/GunalanD95/LeetCode/tree/master/1396-count-servers-that-communicate) |
 | [2583-divide-nodes-into-the-maximum-number-of-groups](https://github.com/GunalanD95/LeetCode/tree/master/2583-divide-nodes-into-the-maximum-number-of-groups) |
 | [2764-maximum-number-of-fish-in-a-grid](https://github.com/GunalanD95/LeetCode/tree/master/2764-maximum-number-of-fish-in-a-grid) |
+| [2793-count-the-number-of-complete-components](https://github.com/GunalanD95/LeetCode/tree/master/2793-count-the-number-of-complete-components) |
 | [3219-make-lexicographically-smallest-array-by-swapping-elements](https://github.com/GunalanD95/LeetCode/tree/master/3219-make-lexicographically-smallest-array-by-swapping-elements) |
 | [3348-minimum-cost-walk-in-weighted-graph](https://github.com/GunalanD95/LeetCode/tree/master/3348-minimum-cost-walk-in-weighted-graph) |
 ## Topological Sort
