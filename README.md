@@ -84,6 +84,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0071-simplify-path](https://github.com/GunalanD95/LeetCode/tree/master/0071-simplify-path) |
 | [0125-valid-palindrome](https://github.com/GunalanD95/LeetCode/tree/master/0125-valid-palindrome) |
 | [0680-valid-palindrome-ii](https://github.com/GunalanD95/LeetCode/tree/master/0680-valid-palindrome-ii) |
+| [0868-push-dominoes](https://github.com/GunalanD95/LeetCode/tree/master/0868-push-dominoes) |
 | [0952-word-subsets](https://github.com/GunalanD95/LeetCode/tree/master/0952-word-subsets) |
 | [1006-vowel-spellchecker](https://github.com/GunalanD95/LeetCode/tree/master/1006-vowel-spellchecker) |
 | [1093-recover-a-tree-from-preorder-traversal](https://github.com/GunalanD95/LeetCode/tree/master/1093-recover-a-tree-from-preorder-traversal) |
@@ -112,6 +113,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0368-largest-divisible-subset](https://github.com/GunalanD95/LeetCode/tree/master/0368-largest-divisible-subset) |
+| [0868-push-dominoes](https://github.com/GunalanD95/LeetCode/tree/master/0868-push-dominoes) |
 | [0905-length-of-longest-fibonacci-subsequence](https://github.com/GunalanD95/LeetCode/tree/master/0905-length-of-longest-fibonacci-subsequence) |
 | [1025-minimum-cost-for-tickets](https://github.com/GunalanD95/LeetCode/tree/master/1025-minimum-cost-for-tickets) |
 | [1170-shortest-common-supersequence](https://github.com/GunalanD95/LeetCode/tree/master/1170-shortest-common-supersequence) |
@@ -416,6 +418,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0088-merge-sorted-array](https://github.com/GunalanD95/LeetCode/tree/master/0088-merge-sorted-array) |
 | [0125-valid-palindrome](https://github.com/GunalanD95/LeetCode/tree/master/0125-valid-palindrome) |
 | [0680-valid-palindrome-ii](https://github.com/GunalanD95/LeetCode/tree/master/0680-valid-palindrome-ii) |
+| [0868-push-dominoes](https://github.com/GunalanD95/LeetCode/tree/master/0868-push-dominoes) |
 | [1713-dot-product-of-two-sparse-vectors](https://github.com/GunalanD95/LeetCode/tree/master/1713-dot-product-of-two-sparse-vectors) |
 | [1790-lowest-common-ancestor-of-a-binary-tree-iii](https://github.com/GunalanD95/LeetCode/tree/master/1790-lowest-common-ancestor-of-a-binary-tree-iii) |
 | [2551-apply-operations-to-an-array](https://github.com/GunalanD95/LeetCode/tree/master/2551-apply-operations-to-an-array) |
